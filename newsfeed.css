@@ -1,4 +1,4 @@
-*{
+{
 margin:0;
 padding:0;
 }
@@ -73,4 +73,48 @@ nav ul li a
   height:1000px;
   
   }
+  
+ 
+.accordion 
+  {
+   margin: 50px;
+   color:white;      
+   h3,p 
+      {
+      padding: 10px;
+      border: 20px solid black;
+      border-bottom: 0;
+      
+      &:last-of-type
+        {
+          border-bottom: 1px solid black;
+        }
+
+      a
+       {
+        display: block;
+        color: black;
+        font-weight: bold;
+       }
+      }
+  
+    p
+     {
+     border-top: 0;
+     
+     font-size: 12px;
+      &:last-of-type 
+     {
+       border-top: 20px solid white;
+       position: relative;
+       top: 40px;
+     }
+  }
+}
+
+a 
+ {
+  text-decoration: none;
+ }
+
 

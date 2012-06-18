@@ -1,6 +1,8 @@
 <html>
   <head><title>news feeds</title>
     <link rel="stylesheet" href="newsfeed.css">
+    <script type="text/javascript" src="jquery-1.6.4.js"></script>
+    <script type="text/javascript" src="newsfeed.js"></script>
   </head>
   <body>
    <section id="wrapper">
@@ -12,7 +14,7 @@
        </section>
     <nav>
       <ul>
-        <li><a href="home.html">all news |</a></li>
+        <li><a href="http://services.digg.com/2.0/digg.getAll">all news|</a></li>
         <li><a href="home.html">technology |</a></li>
         <li><a href="home.html">politics |</a></li>
         <li><a href="home.html">sports |</a></li>
@@ -21,7 +23,14 @@
     </nav>
     </header>
     <section class="main_container">
-    this is the main body section!!!!!
+      <div class="accordion">
+        <h3><a href="">Panel 1</a></h3>
+        <p>this is first panel</p>
+        <h3><a href="">Panel 2</a></h3>
+        <p>this is 2nd panel</p>
+        <h3><a href="">Panel 3</a></h3>
+        <p>this is 3rd panel</p>
+      </div>
     </section>
     <footer>
     <nav>
