@@ -7,16 +7,40 @@
 */
 
 /*$(document).ready(function($) {
-    
+
   var allPanels = $('.accordion > p').hide();
-    
+
+$(document).ready(function($) {
+
+ /* var allPanels = $('.accordion > p').hide();
+
   $('.accordion > h3 > a').click(function() {
     allPanels.slideUp();
     $(this).parent().next().slideDown();
     return false;
   });
+*/
 
-});*/
+$(document).ready(function() {
+	var uri = 'http://services.digg.com/2.0/topics.getAll';
+	var params = {
+					  	  type : 'json'
+								};
+	$.getJSON(uri, params, function(json) {
+  	  if (json.topics.length > 0) {
+  	      for (i in json.topics) {
+  	          $('.topics').append('<li>' + json.topics[i].name + '</li>');
+  		        alert("dasfaf "+json.topics[i].name);
+  	      }
+
+        //$('#stories').show('slow');
+    }
+		});
+
+});
+
+
+});
 
 $.ajax({
   type: 'GET',
