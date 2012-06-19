@@ -74,8 +74,12 @@ nav ul li a
   
   }
   
+* { font-family: Verdana; font-size: 10pt;text-color:white; }
+.topic
+  { font-weight: bold; border-bottom: 1px solid white; }
+  
  
-.accordion 
+/*.accordion 
   {
    margin: 50px;
    color:white;      
@@ -116,5 +120,5 @@ a
  {
   text-decoration: none;
  }
-
+*/
 

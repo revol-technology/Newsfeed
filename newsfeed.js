@@ -6,7 +6,7 @@
 });
 */
 
-$(document).ready(function($) {
+/*$(document).ready(function($) {
     
   var allPanels = $('.accordion > p').hide();
     
@@ -16,4 +16,16 @@ $(document).ready(function($) {
     return false;
   });
 
+});*/
+
+$.ajax({
+  type: 'GET',
+  url: 'http://services.digg.com/2.0/topic.getAll?type=javascript&callback=?',
+  dataType: 'jsonp',
+  success: function(data){
+    for (i = 0; i < data.count; i++)
+    {
+        $(".topics").append("<li>"+data.topics[i].name+"</li>");
+    }
+  }
 });
