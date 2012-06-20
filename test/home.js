@@ -1,5 +1,18 @@
 $(document).ready(function()
 {
+	$.ajax({
+  type: 'GET',
+  url: 'http://services.digg.com/2.0/digg.getAll?type=javascript&callback=?',
+  dataType: 'jsonp',
+  success: function(data){
+    for (i = 0; i < data.count; i++)
+    {
+        $(".maincontent").append("<li>"+data.diggs[i].item.topic.name+"</li><br>");
+        $(".maincontent").append("<li>"+data.diggs[i].item.title+"</li><br>");
+        $(".maincontent").append("<li>"+data.diggs[i].item.description+"</li><br><br>");
+    }
+  }
+});
 	$.ajax
 	({
   	type: 'GET',
@@ -13,20 +26,31 @@ $(document).ready(function()
     	}
   	}
 	});
-
-	/*
-$.ajax({
+	$.ajax({
   type: 'GET',
-  url: 'http://services.digg.com/2.0/digg.getAll?type=javascript&callback=?',
+  url: 'http://services.digg.com/2.0/newsroom.getNews?type=javascript&newsroom_name=technology&callback=?',
   dataType: 'jsonp',
   success: function(data){
     for (i = 0; i < data.count; i++)
     {
-        $(".topics").append("<li>"+data.diggs[i].item.topic.name+"</li><br>");
-        $(".topics").append("<li>"+data.diggs[i].item.title+"</li><br>");
-        $(".topics").append("<li>"+data.diggs[i].item.description+"</li><br><br>");
+        $(".tech").append("<li>"+data.stories[i].title+"</li><br>");
+        $(".tech").append("<li>"+data.stories[i].description+"</li><br><br>");
     }
   }
 });
+$.ajax({
+  type: 'GET',
+  url: 'http://services.digg.com/2.0/newsroom.getNews?type=javascript&newsroom_name=entertainment&callback=?',
+  dataType: 'jsonp',
+  success: function(data){
+    for (i = 0; i < data.count; i++)
+    {
+        $(".ent").append("<li>"+data.stories[i].title+"</li><br>");
+        $(".ent").append("<li>"+data.stories[i].description+"</li><br><br>");
+    }
+  }
+});
+	/*
+
 */
 });
