@@ -1,3 +1,12 @@
+*
+{
+	margin:0;
+	padding:0px;
+}
+body
+{
+	background-color:#F5F6CE;
+}
 ul li
 {
 	float:left;
@@ -7,9 +16,36 @@ ul li
 ul
 {
 	list-style:none;
+	float:left;
 }
 
 ul li a
 {
 	text-decoration:none;
+}
+.wrapper
+{
+	margin:auto;
+	width:960px;
+	display:block;
+}
+header
+{
+	float:left;
+	width:960px;
+	height:100px;
+	background-color:#08298A;
+
+}
+footer
+{
+	float:left;
+	width:960px;
+	height:100px;
+	background-color:#08298A;
+}
+nav
+{
+	float:left;
+	width:960px;
 }
