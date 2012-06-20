@@ -21,9 +21,9 @@ $(document).ready(function()
   	success: function(data){
     for (i = 0; i < data.count; i++)
   	  {
-        $(".maincontent").append("<li class='ttopic'>"+data.diggs[i].item.topic.name+"</li><br>");
-        $(".maincontent").append("<li class='title'>"+data.diggs[i].item.title+"</li><br>");
-        $(".maincontent").append("<li class='desc'>"+data.diggs[i].item.description+"</li><br><br>");
+        $(".maincontent").append("<li class='ttopic'>"+data.diggs[i].item.topic.name+"</li>");
+        $(".maincontent").append("<li class='title'>"+data.diggs[i].item.title+"</li>");
+        $(".maincontent").append("<li class='desc'>"+data.diggs[i].item.description+"</li>");
   	  }
   	}
 	});
