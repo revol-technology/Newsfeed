@@ -35,8 +35,8 @@ $(document).ready(function()
  	 success: function(data){
   	  for (i = 0; i < data.count; i++)
   	  {
-        $(".business").append("<li>"+data.stories[i].title+"</li><br>");
-        $(".business").append("<li>"+data.stories[i].description+"</li><br><br>");
+        $(".business").append("<h4 class='title'>"+data.stories[i].title+"</h4>");
+        $(".business").append("<p class='desc'>"+data.stories[i].description+"</p>");
   	  }
   	}
 	});
@@ -47,8 +47,8 @@ $(document).ready(function()
   	success: function(data){
     	for (i = 0; i < data.count; i++)
     	{
-      	  $(".ent").append("<li>"+data.stories[i].title+"</li><br>");
-      	  $(".ent").append("<li>"+data.stories[i].description+"</li><br><br>");
+      	  $(".ent").append("<h4 class='title'>"+data.stories[i].title+"</h4>");
+      	  $(".ent").append("<p class='desc'>"+data.stories[i].description+"</p>");
     	}
   	}
 	});
@@ -59,8 +59,8 @@ $(document).ready(function()
   	success: function(data){
     	for (i = 0; i < data.count; i++)
     	{
-      	  $(".gaming").append("<li>"+data.stories[i].title+"</li><br>");
-      	  $(".gaming").append("<li>"+data.stories[i].description+"</li><br><br>");
+      	  $(".gaming").append("<h4 class='title'>"+data.stories[i].title+"</h4>");
+      	  $(".gaming").append("<p class='desc'>"+data.stories[i].description+"</p>");
     	}
   	}
 	});
@@ -71,8 +71,8 @@ $(document).ready(function()
   	success: function(data){
     	for (i = 0; i < data.count; i++)
     	{
-      	  $(".lifestyle").append("<li>"+data.stories[i].title+"</li><br>");
-      	  $(".lifestyle").append("<li>"+data.stories[i].description+"</li><br><br>");
+      	  $(".lifestyle").append("<h4 class='title'>"+data.stories[i].title+"</h4>");
+      	  $(".lifestyle").append("<p class='desc'>"+data.stories[i].description+"</p>");
     	}
   	}
 	});
@@ -83,8 +83,8 @@ $(document).ready(function()
   	success: function(data){
     	for (i = 0; i < data.count; i++)
     	{
-      	  $(".offbeat").append("<li>"+data.stories[i].title+"</li><br>");
-      	  $(".offbeat").append("<li>"+data.stories[i].description+"</li><br><br>");
+      	  $(".offbeat").append("<h4 class='title'>"+data.stories[i].title+"</h4>");
+      	  $(".offbeat").append("<p class='desc'>"+data.stories[i].description+"</p>");
     	}
   	}
 	});
@@ -95,8 +95,8 @@ $(document).ready(function()
   	success: function(data){
     	for (i = 0; i < data.count; i++)
     	{
-      	  $(".politics").append("<li>"+data.stories[i].title+"</li><br>");
-      	  $(".politics").append("<li>"+data.stories[i].description+"</li><br><br>");
+      	  $(".politics").append("<h4 class='title'>"+data.stories[i].title+"</h4>");
+      	  $(".politics").append("<p class='desc'>"+data.stories[i].description+"</p>");
     	}
   	}
 	});
@@ -107,8 +107,8 @@ $(document).ready(function()
   	success: function(data){
     	for (i = 0; i < data.count; i++)
     	{
-      	  $(".science").append("<li>"+data.stories[i].title+"</li><br>");
-      	  $(".science").append("<li>"+data.stories[i].description+"</li><br><br>");
+      	  $(".science").append("<h4 class='title'>"+data.stories[i].title+"</h4>");
+      	  $(".science").append("<p class='desc'>"+data.stories[i].description+"</p>");
     	}
   	}
 	});
@@ -119,8 +119,8 @@ $(document).ready(function()
   	success: function(data){
     	for (i = 0; i < data.count; i++)
     	{
-      	  $(".sports").append("<li>"+data.stories[i].title+"</li><br>");
-      	  $(".sports").append("<li>"+data.stories[i].description+"</li><br><br>");
+      	  $(".sports").append("<h4 class='title'>"+data.stories[i].title+"</h4>");
+      	  $(".sports").append("<p class='desc'>"+data.stories[i].description+"</p>");
     	}
   	}
 	});
@@ -131,8 +131,8 @@ $(document).ready(function()
   	success: function(data){
     	for (i = 0; i < data.count; i++)
     	{
-      	  $(".tech").append("<li>"+data.stories[i].title+"</li><br>");
-      	  $(".tech").append("<li>"+data.stories[i].description+"</li><br><br>");
+      	  $(".tech").append("<h4 class='title'>"+data.stories[i].title+"</h4>");
+      	  $(".tech").append("<p class='desc'>"+data.stories[i].description+"</p>");
     	}
   	}
 	});
@@ -144,8 +144,8 @@ $.ajax({
   	success: function(data){
     	for (i = 0; i < data.count; i++)
     	{
-      	  $(".news").append("<li>"+data.stories[i].title+"</li><br>");
-      	  $(".news").append("<li>"+data.stories[i].description+"</li><br><br>");
+      	  $(".news").append("<h4 class='title'>"+data.stories[i].title+"</h4>");
+      	  $(".news").append("<p class='desc'>"+data.stories[i].description+"</p>");
     	}
   	}
 	});

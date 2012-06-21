@@ -22,7 +22,6 @@ ul
 ul li a
 {
 	text-decoration:none;
-	color: #464646;
 }
 .wrapper
 {
@@ -49,7 +48,6 @@ nav
 {
 	float:left;
 	width:960px;
-	color: #60493E;
 }
 .ttopics
 {
@@ -66,14 +64,15 @@ nav
 
 .b
 {
-text-align:center;
-color:white;
+  text-align:center;
+  color:white;
 }
 
 h3
 {
   display:block;
   font: bold 200%/100% "Lucida Grande";
+  position: relative;
   color: #464646;
   text-decoration:underline;
   margin: 21px 0 10px;
@@ -86,7 +85,3 @@ h4
   margin: 0 0 6px;
 }
 
-.maincontent
-  {
-    color: #60493E;
-  }
