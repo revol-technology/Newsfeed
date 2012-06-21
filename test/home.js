@@ -21,9 +21,9 @@ $(document).ready(function()
   	success: function(data){
     for (i = 0; i < data.count; i++)
   	  {
-        $(".maincontent").append("<li class='ttopic'>"+data.diggs[i].item.topic.name+"</li>");
-        $(".maincontent").append("<li class='title'>"+data.diggs[i].item.title+"</li>");
-        $(".maincontent").append("<li class='desc'>"+data.diggs[i].item.description+"</li>");
+        $(".maincontent").append("<h3 class='ttopic'>"+data.diggs[i].item.topic.name+"</h3>");
+        $(".maincontent").append("<h4 class='title'>"+data.diggs[i].item.title+"</h4>");
+        $(".maincontent").append("<p class='desc'>"+data.diggs[i].item.description+"</p>");
   	  }
   	}
 	});
@@ -137,5 +137,17 @@ $(document).ready(function()
   	}
 	});
 
+$.ajax({
+  	type: 'GET',
+  	url: 'http://services.digg.com/2.0/newsroom.getNews?type=javascript&newsroom_name=worldnews&callback=?',
+  	dataType: 'jsonp',
+  	success: function(data){
+    	for (i = 0; i < data.count; i++)
+    	{
+      	  $(".news").append("<li>"+data.stories[i].title+"</li><br>");
+      	  $(".news").append("<li>"+data.stories[i].description+"</li><br><br>");
+    	}
+  	}
+	});
 
 });
