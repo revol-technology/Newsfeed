@@ -83,7 +83,7 @@ h4
 { display:block;
   position: relative;
   color: #464646;
-  margin: 0 0 6px;
+  margin: 15px 0 1px;
 }
 
 .maincontent
@@ -93,4 +93,12 @@ h4
  .business
  {
   float:left;
+ }
+ 
+ h1
+ {
+  font-size: 30px;
+  margin: 0 0 13px;
+  display:block;
+  color: #464646;
  }
